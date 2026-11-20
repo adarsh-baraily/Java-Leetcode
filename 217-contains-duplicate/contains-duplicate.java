@@ -4,8 +4,9 @@ class Solution {
         for(int i = 0; i < nums.length; i++) {
             if(reviewed.contains(nums[i])) {
                 return true;
-            }
+            } else {
             reviewed.add(nums[i]);
+            }
         }
         return false;
     }
